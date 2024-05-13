@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BlurbUI</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .textbox {
+            margin: 5px;
+        }
+        .button {
+            margin: 5px;
+        }
+        .drawer {
+            height: 300px;
+            width: 100%;
+            background-color: #124f88;
+            overflow-x: scroll;
+            transition: 2s;
+            padding-top: 0px;
+        }
+        .drawer-content {
+            margin: 5px;
+            color: white;
+            overflow-y: scroll;
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="nameField" class="textbox" type="text" placeholder="name" >
+        <button id = "clearNameButton" class="button" >X</button>
+        <button id = "copyNameButton" class="button" >Copy</button>
+
+        <input id="locationField" class="textbox" type="text" placeholder="location">
+        <button id = "clearLocationButton" class="button" >X</button>
+        <button id = "copyLocationButton" class="button" >Copy</button>
+
+        <button id = "noEmailButton" class="button" >NO EMAIL</button>
+        <button id = "copyBothButton" class="button" >COPY BOTH</button>
+        <button id = "facebookButton" class="button" >Facebook</button>
+        <button id = "instagramButton" class="button" >Instagram</button>
+        <button id = "googleButton" class="button" >Google</button>
+        <button id = "toggleDrawerButton" class="button" >Toggle Drawer</button>
+            <p></p>
+        <button id = "emailPrompt" class="button" >Email Pr</button>
+        <button id = "googlePrompt" class="button" >Google Pr</button>
+        <button id = "capacityPrompt" class="button" >capacity Pr</button>
+        <button id = "idealArtPrompt" class="button" >ideal Art. Pr</button>
+    </div>
+
+    <div id="drawer" class="drawer">
+        <div id="drawer-content" class="drawer-content">
+            <!-- Records will be added here -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
